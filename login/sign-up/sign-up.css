@@ -1,0 +1,85 @@
+.signup-body{
+    width: 320px;
+    height: 500px;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.1), 0 10px 22px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    top:300px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* SIGNUP BODY END */
+
+/* HEADING SATRTS */
+.signup-body :nth-child(1) h1{
+    font-family: 'Padauk', sans-serif;
+}
+/* HEADING ENDS */
+
+/* INPUT FIELD START */
+.signup-body :nth-child(2) input,
+.signup-body :nth-child(3) input,
+.signup-body :nth-child(4) input,
+.signup-body :nth-child(5) input{
+    font-size: 20px;
+    width: 280px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(161, 159, 159);
+    outline:none;
+    position: relative;
+    top: 0;
+    left:20px;
+}
+.signup-body :nth-child(2) label,
+.signup-body :nth-child(3) label,
+.signup-body :nth-child(4) label,
+.signup-body :nth-child(5) label
+{
+    position: relative;
+    top: -19px;
+    left: 21px;
+    font-size: 16px;
+    font-family:  'Poppins', sans-serif;
+    opacity: .7;
+    transition: .2s ease-in-out;
+}
+.signup-body :nth-child(2) input:focus ~ label,
+.signup-body :nth-child(2) input:valid ~ label,
+.signup-body :nth-child(3) input:focus ~ label,
+.signup-body :nth-child(3) input:valid ~ label,
+.signup-body :nth-child(4) input:focus ~ label,
+.signup-body :nth-child(4) input:valid ~ label,
+.signup-body :nth-child(5) input:focus ~ label,
+.signup-body :nth-child(5) input:valid ~ label
+{
+    top: -48px;
+    font-size: 14px;
+}
+/* INPUT FIELD ENDS */
+
+/*SIGNUP BUTTON STARTS  */
+.signup-body :nth-child(6) button{
+    width: 125px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #fdc306;
+    position: relative;
+    left: 0px;
+    top: -20px;
+    font-family: 'Poppins', sans-serif;
+    opacity: .8;
+}
+.signup-body :nth-child(6) button:hover{
+    opacity: 1;
+    transform: scale(1.1,1.1);
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.1), 0 10px 22px 0 rgba(0, 0, 0, 0.1);
+}

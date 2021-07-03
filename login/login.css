@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+
+    /* BODY STRUCTURING START */
+.full-body{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(248, 244, 244, 0.897);
+}
+.left-side{
+    width: 50%;
+    height: 100vh;
+}
+.right-side{
+    width: 50%;
+    height: 100vh;
+}
+    /* BODY STRUCTURING ENDS */
+
+    /* LOGIN SECTION */
+
+/* LOGIN BODY STARTS */
+.login-body{
+    width: 335px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 15px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.1), 0 10px 22px 0 rgba(0, 0, 0, 0.1);
+    
+}
+/* LOGIN BODY ENDS */
+
+/* INPUT FIELD SATRT */
+
+.login-body :nth-child(1) h1{
+    font-family: 'Padauk', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 102px;
+    top: 10px;
+}
+.login-body :nth-child(2) input,.login-body :nth-child(3) input{
+    font-size: 16px;
+    width: 295px;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 0px;
+    border: none;
+    border-bottom: solid 1px rgb(161, 159, 159);
+    outline: none;
+}
+.login-body :nth-child(2) label,.login-body :nth-child(3) label{
+    font-family:  'Poppins', sans-serif;
+    position: relative;
+    top: -22px;
+    left: 15px;
+    opacity: .8;
+    font-size: 16px;
+    transition: 0.2s ease-in-out;
+}
+.login-body :nth-child(2) input:focus ~ label,.login-body :nth-child(2) input:valid ~ label{
+    top: -45px;
+    font-size: 14px;
+    border-bottom-color: rgb(8, 151, 233);
+} 
+.login-body :nth-child(3) input:focus ~ label ,.login-body :nth-child(3) input:valid ~ label{
+    top: -45px;
+    font-size: 14px;
+    border-color:  rgb(8, 151, 233);
+}
+
+/* INPUT FIELDENDS */
+
+/* LOGIN BUTTON START */
+.login-body :nth-child(4) button{
+    width: 115px;
+    height: 35px;
+    border: none;
+    border-radius:20px ;
+    color: white;
+    font-family: 'Padauk', sans-serif;
+    position: relative;
+    top: -13px;
+    left: 105px;
+    background-color: #fdc306;
+    cursor: pointer;
+    outline: none;
+}
+.login-body :nth-child(4) button:hover{
+    opacity: .8;
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.1), 0 10px 22px 0 rgba(0, 0, 0, 0.1);
+    transform:scale(1.1,1.1);
+}
+/* LOGIN BUTTON ENDS */
+
+/* FORGET LINK START */
+.login-body :nth-child(5) a{
+    position: relative;
+    top: -15px;
+    left: 110px;   
+}
+/* FORGET LINK ENDS */
+
+/* CREATE ACCOUNT START */
+.login-body :nth-child(6) a{
+    color: blue;
+    position: relative;
+    left: 190px;
+    top: -43px;
+    display: none;
+}
+/* CREATE ACCOUNT ENDS */
+
+    /* LOGIN SECTION ENDS */
+
+    /* SIGN UP SECTION STARTS */
+
+/* SIGNUP BODY START */
+
+.signup-body{
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.1), 0 10px 22px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* SIGNUP BODY END */
+
+/* HEADING SATRTS */
+.signup-body :nth-child(1) h1{
+    font-family: 'Padauk', sans-serif;
+}
+/* HEADING ENDS */
+
+/* INPUT FIELD START */
+.signup-body :nth-child(2) input,
+.signup-body :nth-child(3) input,
+.signup-body :nth-child(4) input,
+.signup-body :nth-child(5) input{
+    font-size: 16px;
+    width: 310px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(161, 159, 159);
+    outline:none;
+    position: relative;
+    top: 0;
+    left:20px;
+}
+.signup-body :nth-child(2) label,
+.signup-body :nth-child(3) label,
+.signup-body :nth-child(4) label,
+.signup-body :nth-child(5) label
+{
+    position: relative;
+    top: -19px;
+    left: 19px;
+    font-size: 16px;
+    font-family:  'Poppins', sans-serif;
+    opacity: .7;
+    transition: .2s ease-in-out;
+}
+.signup-body :nth-child(2) input:focus ~ label,
+.signup-body :nth-child(2) input:valid ~ label,
+.signup-body :nth-child(3) input:focus ~ label,
+.signup-body :nth-child(3) input:valid ~ label,
+.signup-body :nth-child(4) input:focus ~ label,
+.signup-body :nth-child(4) input:valid ~ label,
+.signup-body :nth-child(5) input:focus ~ label,
+.signup-body :nth-child(5) input:valid ~ label
+{
+    top: -48px;
+    font-size: 14px;
+}
+#alert-user{
+    color: red;
+    position: relative;
+    left: 40px;
+    top: 0;
+    font-family:'Padauk', sans-serif ;
+    display: none;
+}
+/* INPUT FIELD ENDS */
+
+/*SIGNUP BUTTON STARTS  */
+.signup-body :nth-child(6) button{
+    width: 125px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #fdc306;
+    position: relative;
+    left: 0px;
+    top: -20px;
+    font-family: 'Poppins', sans-serif;
+    opacity: .8;
+    outline: none;
+    cursor: pointer;
+}
+.signup-body :nth-child(6) button:hover{
+    opacity: 1;
+    transform: scale(1.1,1.1);
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.1), 0 10px 22px 0 rgba(0, 0, 0, 0.1);
+}
+/* SIGNUP BUTTON ENDS */
+
+    /* SIGN UP SECTION ENDS */
+
+    /* OVERLAY STARTS */
+
+.overlay-signup{
+    position:absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+    background-color:#fdc306 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+.overlay-signup :nth-child(1) h1,.overlay-signin :nth-child(1) h1{
+    color: #F2FEDC;
+    font-size: 40px;
+    font-family: 'Padauk', sans-serif ;
+    position: relative;
+    top: 122px;
+}
+.overlay-signup :nth-child(2) p,.overlay-signin :nth-child(2) p{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(0, 0, 0, 0.719);
+    padding-left: 110px;
+    padding-right: 100px;
+    position: relative;
+    top: -35px;
+}
+.overlay-signup :nth-child(3) button,.overlay-signin :nth-child(3) button{
+    width: 120px;
+    height: 40px;
+    border: 2px white solid;
+    border-radius: 20px;
+    color: rgba(0, 0, 0, 0.76);
+    background-color: #fdc306;
+    position: relative;
+    top: -170px;
+    left: 0;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+.overlay-signup :nth-child(3) button:hover,
+.overlay-signin :nth-child(3) button:hover{
+    opacity: .8;
+    transform: scale(1.1,1.1);
+}
+.overlay-signin{
+    width: 50%;
+    height: 100vh;
+    background-color:#fdc306  ;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+
+    /* OVERLAY ENDS */
+
+
+

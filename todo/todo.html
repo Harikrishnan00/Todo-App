@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./todo.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+</head>
+<body>
+    <main>
+        <div class="left-section">
+            <h2>Active</h2>
+            <div><p id="active-numbers"></p></div>
+        </div>
+        <div class="right-section">
+            <div class="top-section">
+                <button id="logout">log out<i class="fas fa-sign-out-alt logout"></i></button>
+                <h1>Welcome <span id="head-name"></span></h1>
+                <input type="text" placeholder="Enter text" id="input-content" >
+                <button id="add">Add</button>
+                <div class="list-head">
+                    <h3>Active</h3>
+                </div>  
+            </div>
+            <div class="down-section">
+                <div class="active" >
+                    <ul id="active-list">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </main>
+    
+    <script  src="./todo.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+@media (max-width:700px){
+    .left-section{
+        display: none;
+    }
+    .top-section h1  {
+        position: absolute;
+        left: 32%;
+        top: 15%;
+        
+        font-size: 22px;
+    }
+    .top-section input{
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%,-50%);
+        width: 310px;
+    }
+    .right-section{
+        width: 100%;
+    }
+    .active{
+        position: absolute;
+        
+        top: 40%;
+        
+    }
+    #add{
+        position: absolute;
+        left: 40%;
+        top: 30%;
+    }
+}

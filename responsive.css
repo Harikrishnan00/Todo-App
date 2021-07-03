@@ -1,0 +1,44 @@
+@media (max-width:700px){
+    .container{
+        margin-right: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container  a{
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+    span{
+        display: none;
+    }
+    .left-section{
+        width: 100%;
+        
+    }
+    .left-section h1{
+        position: relative;
+        top: 20px;
+    }
+    .left-section p{
+        position: relative;
+        top: 30px;
+        padding-right: 50px;
+    }
+    .left-section button{
+        position: relative;
+        top: 30px;
+        left: -20px;
+    }
+    .right-section :nth-child(1) img{
+        display: none;
+    }
+    .right-section :nth-child(2) img{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: -50px;
+        left: 160px;
+
+    }
+}

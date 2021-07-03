@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+/* MAIN START */
+.main-section{
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(234, 217, 217, 0.36) ;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+.container{
+    width: 98%;
+    height: 96vh;
+    border: solid 1px rgba(234, 217, 217, 0.36);
+    margin: 12px 12px; 
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.1), 0 10px 22px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+/* MAIN END */
+
+/* LEFT SECTION START */
+.left-section{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+.container  a{
+    font-family: 'Padauk', sans-serif;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    left: 50px;
+    top: 25px;   
+}
+.left-section h1{
+      position: relative;
+      top: 115px;
+      font-size: 30px;
+      font-family: 'Poppins', sans-serif;  
+      font-weight: bolder;
+}
+.left-section p{
+   color: rgba(0, 0, 0, 0.801);
+   font-weight:bold ;
+   font-family: 'Poppins', sans-serif;  
+   opacity: 1;
+   position: relative;
+   top:0px;
+}
+.left-section button{
+    border: none;
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #fdc306;
+    color: white;
+    position: relative;
+    top: -125px;
+    left: -52px;
+    font-family:'Padauk', sans-serif ;
+    font-size: 16px;
+    opacity: .8;
+    cursor: pointer;
+    outline: none;
+}
+.left-section :nth-child(3) button:hover{
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.1), 0 10px 22px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    opacity: 1;
+    text-decoration: underline;
+}
+/* LEFT SECTION END */
+
+/* RIGHT SECTION START */
+.right-section :nth-child(1) img{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 176px;
+    right: 20px;
+}
+.right-section :nth-child(2) img{
+      position: relative;
+      top: -284px;
+      width: 500px;
+      height: 450px;
+
+}
+/* RIGHT SECTION END */
+

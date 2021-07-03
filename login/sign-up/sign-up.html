@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="sign-up.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="right-side">
+        <div class="signup-body " id="signup1">
+                <div><h1>Sign Up</h1></div>
+                <div>
+                    <input type="text" required id="name">
+                    <label for="">Name</label>
+                </div>
+                <div>
+                    <input type="text" required id="username">
+                    <label for="">Username</label>
+                </div>
+                <div>
+                    <input type="password" required id="password">
+                    <label for="">Passsword</label>
+                </div>
+                <div>
+                    <input type="password" required id="c-password">
+                    <label for="">Confirm password</label>
+                </div>
+                <div><button id="signUp">Sign up</button></div>   
+        </div>
+        <script src="./signUp.js"></script>
+</body>
+</html>

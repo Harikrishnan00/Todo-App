@@ -1,0 +1,28 @@
+@media (max-width:700px){
+    .overlay-signin{
+        display: none;
+    }
+    .overlay-signup{
+        display: none;
+    }
+    .signup-body{
+        display: none;
+    }
+    .login-body{
+        position: absolute;
+        left: 20px;
+        top: 130px;
+        width: 320px;
+        height: 360px;
+        border-radius: 5px;
+        transform: translate(0,0);
+    }
+    .login-body :nth-child(5) a{
+        position: relative;
+        left: 30px;
+        top: 0;
+    }
+    .login-body :nth-child(6) a{
+        display: inline;
+    }
+}
